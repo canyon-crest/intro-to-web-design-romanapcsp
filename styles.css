@@ -54,9 +54,9 @@ a {
 }
 
 a:hover {
-  color: blue; 
-  text-decoration: underline; 
-}text-decoration: underline;
+    color: blue; 
+    text-decoration: underline; 
+    text-decoration: underline;
 }
 h3{
     font-size: 24px;
