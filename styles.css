@@ -40,6 +40,9 @@ img {
     object-fit: cover;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+#school{
+    float:left;
+}
 img:hover {
     box-shadow: 2.5px 2.5px 10px #fec90c;
     cursor: url('aero_link_glow.cur'), auto;
@@ -85,11 +88,17 @@ a {
     text-decoration:wavy; 
     color: #fbce2e; 
     font-weight: normal; 
-    cursor:url('beam_glow.cur')
+    cursor:url('aero_link_glow.cur')
 }
-
+a:link{
+    color: rgba(225, 184, 70, 0.726);
+    text-decoration:wavy;
+}
+a:visited{
+    color: rgb(164, 118, 9);
+}
 a:hover {
-    cursor: url('beam_glow.cur'),auto;
+    cursor: url('aero_link_glow.cur'),auto;
     color: rgb(123, 95, 18); 
     text-decoration: line-through;
 }
@@ -162,4 +171,24 @@ ul{
     #sidebar{
         display:none;
     }
+}
+h2 {
+  animation: wave 2s ease-in-out infinite alternate;
+  display: inline-block;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes wave {
+  0%   { transform: translateY(0) rotate(-1deg); }
+  50%  { transform: translateY(-10px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1deg); }
+}
+#header{
+    width: 100%;
+}
+.para {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: rgba(255, 255, 255, 0.05);
 }
